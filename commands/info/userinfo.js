@@ -3,11 +3,11 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "userinfo",
-  aliases: ["memberinfo", "whois"],
+  aliases: [],
   description: "Informasi User!",
   usage: "Userinfo | <Mention User>",
   run: async (client, message, args) => {
-    //Start
+    
    
     let member = message.mentions.users.first() || message.member;
 
@@ -29,6 +29,6 @@ module.exports = {
       .addField("**Status**", statuses[member.presence.status], true)
     message.channel.send(embed);
 
-    //End
+   
   }
 };
