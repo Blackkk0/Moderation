@@ -7,6 +7,8 @@ module.exports = {
   run: async(client, message, args) => {
     
   let embed = new Discord.MessageEmbed()
+  .setColor("")
+  .setAuthor("help commands","")
   .setDescription(`
 **General Commands**
 \`userinfo\`,\`serverinfo\`,\`botinfo\`,
@@ -26,6 +28,6 @@ module.exports = {
 `)
     
   message.channel.send(embed);
-  
-    }
+      }
+   }
 }
