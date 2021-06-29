@@ -4,8 +4,8 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "numberinvite",
   aliases: ["invites"],
-  description: "Help Command!",
-  usage: "o/Help | <Command Name>",
+  description: "",
+  usage: "",
   run: async(client, message, args) => {
 try {
             let member = await message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(r => r.user.username.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.guild.members.cache.find(r => r.displayName.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.member;
@@ -23,7 +23,7 @@ try {
             memberInvites.forEach(invite => index += invite.uses);
 
             let embed = new Discord.MessageEmbed()
-                .setColor("YELLOW")
+                .setColor("")
                 .setFooter(message.guild.name, message.guild.iconURL())
                 .setAuthor(`Invite Tracker for: ${message.guild.name}`)
                 .setDescription(`Information on Invites of:  ${member.displayName}`)
