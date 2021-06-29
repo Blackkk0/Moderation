@@ -2,13 +2,13 @@ const Discord = require("discord.js");
 
 module.exports = {
   name: "help",
-  aliases:["commands"],
+  aliases:[],
   description: "Help Command!",
   usage: "o/Help | <Command Name>",
   run: async(client, message, args) => {
     
   let embed = new Discord.MessageEmbed()
-  .setColor("BLUE")
+  .setColor("")
   .setAuthor("help commands","")
   .setDescription(`
 **General Commands**
