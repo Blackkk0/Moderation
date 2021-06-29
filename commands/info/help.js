@@ -27,7 +27,7 @@ module.exports = {
 [Invite]() , [Support]()
 `)
     
-  message.channel.send(embed);
+  message.channel.send(embed)
       }
    }
 }
