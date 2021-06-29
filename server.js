@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const fs = require("fs");
 const timezone = require("moment-timezone");
 const client = new Discord.Client();
-const Prefix = "";
+const Prefix = "?";
 const fetch = require("node-fetch");
 
 client.commands = new Discord.Collection();
@@ -14,7 +14,7 @@ client.on("ready", async () => {
   client.user.setStatus ("idle");
   client.user
     .setActivity(
-      `A!help | ${client.guilds.cache.size} Guilds `,
+      `?help | ${client.guilds.cache.size} Guilds `,
                           
       { type: "PLAYING" }
     )
@@ -90,7 +90,7 @@ setInterval(async () => {
   await fetch('https://discord-modera-fun-bot.glitch.me').then(console.log('Pinged!'))
 }, 240000)
 
-client.login("ODA2NDI3NDA5NTUzMTYyMjQw.YBpSDQ.b-Tn1nEanN6oX_0ejXRyGTnh2Yc");
+client.login("ODQzNTAzMTc3Mjc3MTEyMzQw.YKEzjA.5XCs4L00VSD6y_bkfr24G3yJgB4");
 
   client.on("ready", () => {
   client.channels.cache.get("841077291517214781").join();
