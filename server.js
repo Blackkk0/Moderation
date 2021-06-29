@@ -33,7 +33,7 @@ client.on("message", async message => {
   }
 });
 
-let modules = ["info", "moderation"];
+let modules = ["info", "moderation", "economy"];
 
 modules.forEach(function(module) {
   fs.readdir(`./commands/${module}`, function(err, files) {
