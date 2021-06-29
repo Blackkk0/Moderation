@@ -8,7 +8,7 @@ module.exports = {
   description: "Menampilkan cuaca di lokasi mu!",
   usage: "Weather <Location>",
   run: async (client, message, args) => {
-    //Start
+    
    
 
     if (!args[0]) return message.channel.send("Please Masukkan Nama Lokasi nya!");
@@ -40,6 +40,6 @@ module.exports = {
       message.channel.send(Weather);
     });
 
-    //End
+    
   }
 };
