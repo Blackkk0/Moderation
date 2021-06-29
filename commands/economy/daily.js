@@ -1,6 +1,11 @@
 const Discord = require('discord.js');
 const db = require('quick.db')
 const ms = require('parse-ms')
+module.exports = {
+  name: "daily",
+  aliases: [],
+  description: "",
+  usage: "",
 exports.run = async(client, message) => {
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   function rastgeleMiktar(min, max) {
@@ -32,4 +37,3 @@ db.set(`worktime_${message.author.id}`, Date.now())
     
  };
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-exports.conf = {
