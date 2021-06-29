@@ -3,12 +3,12 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "invite",
-  aliases: ["link"],
-  description: "Help Command!",
-  usage: "o/Help | <Command Name>",
+  aliases: [],
+  description: "",
+  usage: "",
   run: async(client, message, args) => {
 let embed = new Discord.MessageEmbed()
-      .setColor("BLACK")
+      .setColor("")
       .setTitle(`link Bot`)
       .setURL(
         ""
