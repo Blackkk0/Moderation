@@ -7,7 +7,7 @@ module.exports = {
   description: "Pong!",
   usage: "Ping",
   run: async (client, message, args) => {
-    //Start
+   
    
 
     const embed = new MessageEmbed()
@@ -18,6 +18,6 @@ module.exports = {
 
     message.channel.send(embed);
 
-    //End
+    
   }
 };
