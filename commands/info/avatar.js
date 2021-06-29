@@ -4,10 +4,10 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "avatar",
   aliases: [],
-  description: "Foto Profil / Avatar!",
-  usage: "Avatar | <Mention Member>",
+  description: "",
+  usage: "",
   run: async (client, message, args) => {
-    //Start
+    
    
     let Member =
       message.mentions.members.first() ||
@@ -34,6 +34,6 @@ module.exports = {
 
     message.channel.send(embed);
 
-    //End
+    
   }
 };
