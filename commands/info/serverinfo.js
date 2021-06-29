@@ -3,11 +3,11 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "serverinfo",
-  aliases: ["serverinformation"],
+  aliases: [],
   description: "Show Server Information!",
   usage: "Serverinfo",
   run: async (client, message, args) => {
-    //Start
+    
    const text = message.guild.channels.cache.filter(r => r.type === "text")
        .size;
      const voice = message.guild.channels.cache.filter(r => r.type === "voice")
@@ -21,14 +21,14 @@ module.exports = {
        .setTitle(guild.name + " Info")
        .setColor("")
        .setThumbnail(guild.iconURL())
-       .addField(`🆔 **__Server ID :__**`, `${guild.id}`, true)
-       .addField(`📆 **__Created On :__**`, message.guild.createdAt.toLocaleString())
-       .addField(`👑 **__Owned by :__**`, `${message.guild.owner}`, true)
-       .addField(`👥 **__Members :__**`, Members, true)
-       .addField(`**__Server Online__**`, `${message.guild.members.cache.filter(m => m.user.presence.status == "online").size}`)
-       .addField(`💬 **__Channels :__** (${channels})`, `${text} Text | ${voice} Voice `)
-       .addField(`**__Region__** :`, `${message.guild.region}`)
-       .addField(`**__Roles__**`, Roles, true)
+       .addField(`**Server ID**`, `${guild.id}`, true)
+       .addField(`**Created On**`, message.guild.createdAt.toLocaleString())
+       .addField(`**Owned by**`, `${message.guild.owner}`, true)
+       .addField(`**Members**`, Members, true)
+       .addField(`**Server Online**`, `${message.guild.members.cache.filter(m => m.user.presence.status == "online").size}`)
+       .addField(`**Channels** (${channels})`, `${text} Text | ${voice} Voice `)
+       .addField(`**Region**`, `${message.guild.region}`)
+       .addField(`**Roles**`, Roles, true)
 
      message.channel.send(embed);
   }
