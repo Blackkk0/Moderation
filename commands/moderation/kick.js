@@ -7,7 +7,7 @@ module.exports = {
   description: "Kick A Member!",
   usage: "Kick <Mention Member>",
   run: async (client, message, args) => {
-    //Start
+    
    
     if (!message.member.hasPermission("KICK_MEMBERS"))
       return message.channel.send(
@@ -73,6 +73,5 @@ module.exports = {
         .then(() => console.log(error));
     }
 
-    //End
   }
 };
