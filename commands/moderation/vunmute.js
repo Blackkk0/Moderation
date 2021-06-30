@@ -4,8 +4,8 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "vunmute",
   aliases: [],
-  description: "Ban A Member!",
-  usage: "Ban <Mention Member>",
+  description: "",
+  usage: "",
   run: async (client, msg, args) => {
 var muteUser = msg.mentions.members.first();
    
