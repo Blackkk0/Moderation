@@ -3,11 +3,11 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "clear",
-  aliases: ["purge", "clearmsgs"],
+  aliases: [],
   description: "Clear Your Messages!",
   usage: "Clear <Message Amount>",
   run: async (client, message, args) => {
-    //Start
+    
    
     if (!message.member.hasPermission("MANAGE_MESSAGES"))
       return message.channel.send(
@@ -47,6 +47,6 @@ module.exports = {
         .then(msg => msg.delete({ timeout: 10000 }));
     });
 
-    //End
+  
   }
 };
