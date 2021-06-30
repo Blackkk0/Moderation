@@ -7,7 +7,7 @@ module.exports = {
   description: "Unban A Member!",
   usage: "Unban <Member ID>",
   run: async (client, message, args) => {
-    //Start
+  
    
     if (!message.member.hasPermission("BAN_MEMBERS"))
       return message.channel.send(
@@ -68,6 +68,6 @@ module.exports = {
 
     return message.channel.send(embed);
 
-    //End
+ 
   }
 };
