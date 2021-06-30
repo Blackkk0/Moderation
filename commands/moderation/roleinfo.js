@@ -4,8 +4,8 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "roleinfo",
   aliases: [],
-  description: "Ban A Member!",
-  usage: "Ban <Mention Member>",
+  description: "",
+  usage: "",
   run: async (client, message) => {
 let args = message.content.split(" ").slice(1).join(" ");
 if (!args[0]) return message.channel.send("**Please Mention A Role!**")
@@ -16,7 +16,7 @@ if (!args[0]) return message.channel.send("**Please Mention A Role!**")
             true: "Yes"
         }
         let roleembed = new Discord.MessageEmbed()
-            .setColor("#00ff00")
+            .setColor("")
             .setAuthor("Role Info")
             .setThumbnail(message.guild.iconURL())
             .addField("**ID**", `\`${role.id}\``, true)
