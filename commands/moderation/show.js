@@ -4,8 +4,8 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "show",
   aliases: [],
-  description: "Ban A Member!",
-  usage: "Ban <Mention Member>",
+  description: "",
+  usage: "",
   run: async (client, message, args) => {
  if (!message.member.hasPermission("MANAGE_CHANNELS"))
       return message.channel.send(
