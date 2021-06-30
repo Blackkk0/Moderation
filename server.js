@@ -94,4 +94,4 @@ setInterval(async () => {
   client.channels.cache.get("841077291517214781").join();
 })
 /////
-client.login("ODQzNTAzMTc3Mjc3MTEyMzQw.YKEzjA.5XCs4L00VSD6y_bkfr24G3yJgB4");
+client.login("");
