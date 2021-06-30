@@ -4,8 +4,8 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "lock",
   aliases: [],
-  description: "Ban A Member!",
-  usage: "Ban <Mention Member>",
+  description: "",
+  usage: "",
 
 run: async (client, message, args) => {
 
@@ -20,7 +20,7 @@ if (!message.guild.member(message.author).hasPermission("MANAGE_CHANNELS"))
           .addField("**Guild name:**", message.guild.name)
           .addField("**Channel:**", `<#${message.channel.id}>`)
           .addField("**Locked by:**", `<@${message.author.id}>`, true)
-          .setColor("RANDOM");
+          .setColor("");
         return message.channel.send(embed);
       });
   }
