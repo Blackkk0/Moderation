@@ -15,7 +15,7 @@ module.exports = {
 \`userinfo\`,\`serverinfo\`,\`botinfo\`,
 \`weather\`,\`avatar\`,\`serveravatar\`,
 \`invite\`,\`roles\`,\`listemoji\`,
-\`allbots\`,\`roleinfo\`
+\`allbots\`,\`roleinfo\`,\`channels\`
 **Moderation Commands**
 \`backup\`,\`mute\`,\`unmute\`,
 \`ban\`,\`unban\`,\`kick\`,
