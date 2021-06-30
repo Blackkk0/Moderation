@@ -7,7 +7,7 @@ module.exports = {
   description: "Mute A User!",
   usage: "Mute <Mention User> | <Reason>",
   run: async (client, message, args) => {
-    //Start
+    
      if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel.send(
         `You Don't Have Permission To Use This Command!`
@@ -48,6 +48,6 @@ module.exports = {
       return message.channel.send(`Something Went Wrong, Try Again Later!`);
     }
 
-    //End
+   
   }
 };
