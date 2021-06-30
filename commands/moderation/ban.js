@@ -7,7 +7,7 @@ module.exports = {
   description: "Ban A Member!",
   usage: "Ban <Mention Member>",
   run: async (client, message, args) => {
-    //Start
+    
    
     if (!message.member.hasPermission("BAN_MEMBERS"))
       return message.channel.send(
@@ -71,6 +71,5 @@ module.exports = {
         .then(() => console.log(error));
     }
 
-    //End
   }
 };
