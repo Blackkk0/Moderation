@@ -7,10 +7,9 @@ const Discord = require("discord.js"),
 module.exports = {
 name: "backup",
   aliases: [],
-  description: "Ban A Member!",
-  usage: "Ban <Mention Member>",
+  description: "",
+  usage: "",
   run: async (client, message, args) => {
-    //Start
    
     if (!message.member.hasPermission("ADMINISTRATOR"))
       return message.channel.send(
