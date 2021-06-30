@@ -4,8 +4,8 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "undeafen",
   aliases: [],
-  description: "Mute A User!",
-  usage: "Mute <Mention User> | <Reason>",
+  description: "",
+  usage: "",
   run: async (client, message, args) => {
 var deafuser = message.mentions.members.first();
    
