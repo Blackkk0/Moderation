@@ -4,8 +4,8 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "unlock",
   aliases: [],
-  description: "Ban A Member!",
-  usage: "Ban <Mention Member>",
+  description: "",
+  usage: "",
 
 run: async (client, message, args) => { 
   if (!message.member.hasPermission("MANAGE_CHANNELS"))
@@ -19,7 +19,7 @@ run: async (client, message, args) => {
           .addField("**Guild name:**", message.guild.name)
           .addField("**Channel:**", `<#${message.channel.id}>`)
           .addField("**Unlocked by:**", `<@${message.author.id}>`, true)
-          .setColor("RANDOM");
+          .setColor("");
         return message.channel.send(embed);
       });
   }
